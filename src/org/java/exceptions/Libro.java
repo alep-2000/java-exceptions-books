@@ -19,7 +19,7 @@ public class Libro {
 
 	public void setTitolo(String titolo) throws Exception {
 		
-		if (titolo == null || titolo.isEmpty() ) 
+		if (titolo == null || titolo.trim().isEmpty() ) 
 			throw new Exception("Titolo è vuoto o nullo");
 		
 		this.titolo = titolo;
@@ -41,7 +41,7 @@ public class Libro {
 	}
 
 	public void setAutore(String autore) throws Exception {
-		if (autore == null || autore.isEmpty() ) 
+		if (autore == null || autore.trim().isEmpty() ) 
 			throw new Exception("Autore è vuoto o nullo");
 		
 		this.autore = autore;
@@ -52,7 +52,7 @@ public class Libro {
 	}
 
 	public void setEditore(String editore) throws Exception {
-		if (editore == null || editore.isEmpty() ) 
+		if (editore == null || editore.trim().isEmpty() ) 
 			throw new Exception("Editore è vuoto o nullo");
 		
 		this.editore = editore;

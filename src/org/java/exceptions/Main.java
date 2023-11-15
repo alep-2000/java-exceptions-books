@@ -63,7 +63,10 @@ public class Main {
 				
 				Libro u = libri[x];
 				
-				myWriter.write(u.getTitolo() + "\n");
+				myWriter.write("Titolo: " + u.getTitolo() + "\n"
+								+ "Numero Pagine: " + u.getNumeroPagine() + "\n"
+								+ "Autore: " + u.getAutore() + "\n"
+								+ "Editore: " + u.getEditore() + "\n");
 			}
 		} catch (IOException e) {
 			
